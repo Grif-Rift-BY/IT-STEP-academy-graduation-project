@@ -4,31 +4,290 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>TOR BAND</title>
+  <script src="https://kit.fontawesome.com/32d1705482.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <div class="wrapper">
+
     <header class="header">
+
       <div class="container">
-        <nav class="navbar">
-          <ul class="navbar__list">
-            <li class="navbar__item"></li>
-            <li class="navbar__item"></li>
-            <li class="navbar__item"></li>
-            <li class="navbar__logo"></li>
-            <li class="navbar__item"></li>
-            <li class="navbar__item"></li>
-            <li class="navbar__item"></li>
+
+        <div class="header__desktop-menu">
+          <ul class="header__socials-list socials-list">
+            <li class="socials-list__item"><a href="https://www.youtube.com/TORBAND?sub_confirmation=1"><i class="fa-brands fa-youtube"></i></a></li>
+            <li class="socials-list__item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="socials-list__item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="socials-list__item"><a href="#"><i class="fa-brands fa-vk"></i></a></li>
+            <li class="socials-list__item"><a href="#"><i class="fa-brands fa-spotify"></i></a></li>
+            <li class="socials-list__item"><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+            <li class="socials-list__item"><a href="#"><i class="fa-brands fa-deezer"></i></a></li>
+            <li class="socials-list__item"><a href="#"><i class="fa-brands fa-yandex-international"></i></a></li>
+            <li class="socials-list__item"><a href="#"><i class="fa-brands fa-soundcloud"></i></a></li>
+            <li class="socials-list__item"><a href="#"><i class="fa-brands fa-amazon"></i></a></li>
+            <li class="socials-list__item"><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li class="socials-list__item"><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+            <li class="socials-list__item"><a href="#"><i class="fa-brands fa-patreon"></i></a></li>
           </ul>
-        </nav>
+          <nav class="header__navbar navbar">
+            <ul class="navbar__list">
+              <li class="navbar__menu-item">НОВОСТИ</li>
+              <li class="navbar__menu-item">МУЗЫКА</li>
+              <li class="navbar__logo">
+                <a href="" class="navbar__logo-link"></a>
+              </li>
+              <li class="navbar__menu-item">ВИДЕО</li>
+              <li class="navbar__menu-item">О НАС</li>
+            </ul>
+          </nav>
+        </div>
+        
+        <button class="header__burger-menu-button" id="HEADER__BURGER-MENU-BUTTON"><i class="fa-solid fa-bars"></i></button>
+
+        <div class="header__mobile-menu">
+          <button class="close-button" id="CLOSE-BUTTON"><i class="fa-solid fa-xmark"></i></i></button>
+          <nav class="header__navbar navbar">
+            <ul class="navbar__list">
+              <li class="navbar__menu-item"><a href="" class="navbar__logo-link"></a></li>
+              <li class="navbar__menu-item">НОВОСТИ</li>
+              <li class="navbar__menu-item">МУЗЫКА</li>
+              <li class="navbar__menu-item">ВИДЕО</li>
+              <li class="navbar__menu-item">О НАС</li>
+            </ul>
+          </nav> 
+        </div>
+
       </div>
+
     </header>
+
     <main class="main">
+      <section class="preview">
+        <video class="preview-video" preload="auto" autoplay loop playsinline muted>
+          <source class="preview-video" src="assets/video/revolution.mp4">
+        </video>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <div class="news__block">
+            <h2 class="title">НОВОСТИ</h2>
+            
+            <div class="songs">
+              <div class="songs__item">
+                <img class="songs__item-image" src="assets/img/news/first.jfif" alt="">
+                <a href="https://music.youtube.com/watch?v=TpePZmrDVms&list=OLAK5uy_kahwDCPniR5Rbc0X8khb_ALdXamjNmUbo" 
+                   class="songs__item-link">
+                  <span class="songs__item-span">Далее &rarr;</span>
+                  <span class="songs__glass-background"></span>
+                </a>
+                <h3 class="songs__item-title">Я НАРАДЗIУСЯ ТУТ</h3>
+                <p class="songs__item-text">РЕЛИЗ</p>
+              </div>
+
+              <div class="songs__item">
+                <img class="songs__item-image" src="assets/img/news/second.jfif" alt="">
+                <a href="https://open.spotify.com/track/4VEDNfMMx3J5xSEUWbnufC?si=7e6edafd068048a7" class="songs__item-link">
+                  <span class="songs__item-span">Далее &rarr;</span>
+                  <span class="songs__glass-background"></span>
+                </a>
+                <h3 class="songs__item-title">Сегодня мне 40 лет</h3>
+                <p class="songs__item-text">НОВОСТЬ</p>
+              </div>
+
+              <div class="songs__item">
+                <img class="songs__item-image" src="assets/img/news/third.jfif" alt="">
+                <a href="https://open.spotify.com/track/2wjhzkHwi0tdcyDWvIPnWU?si=2a618fa315ef4242" class="songs__item-link">
+                  <span class="songs__item-span">Далее &rarr;</span>
+                  <span class="songs__glass-background"></span>
+                </a>
+                <h3 class="songs__item-title">НАША РАДЗIМА</h3>
+                <p class="songs__item-text">РЕЛИЗ</p>
+              </div>
+
+            </div>
+
+            <div class="button-container">
+              <div class="manicure-link__button-wrapper">
+                <a class="manicure-link__switch-button" href="#">ВСЕ НОВОСТИ</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </section>
+
+      <section class="music">
+        <div class="music__block">
+          <div class="container">
+            <h2 class="title">МУЗЫКА</h2>
+            <div class="songs">
+
+              <div class="songs__item">
+                <img class="songs__item-image" src="assets/img/music/longlive.jfif" alt="">
+                <a href="https://music.youtube.com/watch?v=TpePZmrDVms&list=OLAK5uy_kahwDCPniR5Rbc0X8khb_ALdXamjNmUbo" 
+                   class="songs__item-link">
+                  <span class="songs__item-span">Слушать &rarr;</span>
+                  <span class="songs__glass-background"></span>
+                </a>
+                <h3 class="songs__item-title">ЖЫВЕ!</h3>
+              <p class="songs__item-text">СИНГЛ</p>
+              </div>
+
+              <div class="songs__item">
+                <img class="songs__item-image" src="assets/img/music/tut.jfif" alt="">
+                <a href="https://open.spotify.com/track/4VEDNfMMx3J5xSEUWbnufC?si=7e6edafd068048a7" class="songs__item-link">
+                  <span class="songs__item-span">Слушать &rarr;</span>
+                  <span class="songs__glass-background"></span>
+                </a>
+                <h3 class="songs__item-title">Я НАРАДЗIУСЯ ТУТ</h3>
+              <p class="songs__item-text">СИНГЛ</p>
+              </div>
+
+              <div class="songs__item">
+                <img class="songs__item-image" src="assets/img/music/motherland.jfif" alt="">
+                <a href="https://open.spotify.com/track/2wjhzkHwi0tdcyDWvIPnWU?si=2a618fa315ef4242" class="songs__item-link">
+                  <span class="songs__item-span">Слушать &rarr;</span>
+                  <span class="songs__glass-background"></span>
+                </a>
+                <h3 class="songs__item-title">РОДНАЯ ЗЯМЛЯ</h3>
+                <p class="songs__item-text">СИНГЛ</p>
+              </div>
+
+              <div class="songs__item">
+                <img class="songs__item-image" src="assets/img/music/belarus.jfif" alt="">
+                <a href="https://open.spotify.com/track/5w2rLwMfiUpscZayeK7ua6?si=390b79cec3604a69" class="songs__item-link">
+                  <span class="songs__item-span">Слушать &rarr;</span>
+                  <span class="songs__glass-background"></span>
+                </a>
+                <h3 class="songs__item-title">МАЯ  БЕЛАРУСЬ</h3>
+              <p class="songs__item-text">СИНГЛ</p>
+              </div>
+            </div>
+            
+            <div class="button-container">
+              <div class="manicure-link__button-wrapper">
+                <a class="manicure-link__switch-button" href="#">ВСЯ МУЗЫКА</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video">
+        <div class="video__block">
+          <div class="container">
+            <h2 class="title">ВИДЕО</h2>
+            <div class="songs">
+              <div class="video__block__item">
+                <iframe src="https://www.youtube.com/embed/Rai9tQCrRsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="video__block__item">
+                <iframe src="https://www.youtube.com/embed/tbVjr9mI5oE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="video__block__item">
+                <iframe src="https://www.youtube.com/embed/KHGUoCh13j4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="video__block__item">
+                <iframe src="https://www.youtube.com/embed/kQvKA2FAtwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="button-container">
+              <div class="manicure-link__button-wrapper">
+                <a class="manicure-link__switch-button" href="#">ВСЕ ВИДЕО</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <div class="about__block">
+            <h2 class="title">О НАС</h2>
+          </div>
+          <div class="button-container">
+            <div class="manicure-link__button-wrapper">
+              <a class="manicure-link__switch-button" href="#">О НАС</a>
+            </div>
+          </div>    
+        </div>
+      </section>
 
     </main>
+
     <footer class="footer">
+
+      <div class="footer__nav">
+        <div class="container">
+          <div class="footer__navbar-wrapper">
+            <nav class="footer__navbar navbar">
+              <ul class="navbar__list">
+                <li class="navbar__menu-item footer__navbar-item">НОВОСТИ</li>
+                <li class="navbar__menu-item footer__navbar-item">МУЗЫКА</li>
+                <li class="navbar__logo">
+                  <a href="" class="navbar__logo-link"></a>
+                </li>
+                <li class="navbar__menu-item footer__navbar-item">ВИДЕО</li>
+                <li class="navbar__menu-item footer__navbar-item">О НАС</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__socials">
+        <div class="container">
+          <div class="footer__socials-list-wrapper">
+            <ul class="footer__socials-list socials-list">
+              <li class="socials-list__item"><a href="https://www.youtube.com/TORBAND?sub_confirmation=1"><i class="fa-brands fa-youtube"></i></a></li>
+              <li class="socials-list__item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li class="socials-list__item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li class="socials-list__item"><a href="#"><i class="fa-brands fa-vk"></i></a></li>
+              <li class="socials-list__item"><a href="#"><i class="fa-brands fa-spotify"></i></a></li>
+              <li class="socials-list__item"><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+              <li class="socials-list__item"><a href="#"><i class="fa-brands fa-deezer"></i></a></li>
+              <li class="socials-list__item"><a href="#"><i class="fa-brands fa-yandex-international"></i></a></li>
+              <li class="socials-list__item"><a href="#"><i class="fa-brands fa-soundcloud"></i></a></li>
+              <li class="socials-list__item"><a href="#"><i class="fa-brands fa-amazon"></i></a></li>
+              <li class="socials-list__item"><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+              <li class="socials-list__item"><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+              <li class="socials-list__item"><a href="#"><i class="fa-brands fa-patreon"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
     </footer>
   </div>
+  <script src="js/main.js"></script>
+  <script>
+    document.body.onload = () => {
+        let body = document.querySelector( 'body' );
+        let button = document.createElement( 'button' );
+        let allBodyElements = document.querySelectorAll( 'body *' );
+        body.insertBefore( button, allBodyElements[ 0 ] );
+        button = document.querySelector( 'button' );
+        button.setAttribute ( 'id', 'SWITCH' );
+        SWITCH.style.position = 'fixed';
+        SWITCH.style.top = '0';
+        SWITCH.style.right = '0';
+        SWITCH.style.zIndex = '9999';
+        SWITCH.style.width = '15px';
+        SWITCH.style.height = '15px';
+        SWITCH.style.opacity = '.5';
+        SWITCH.style.backgroundColor = 'red';
+        SWITCH.onclick = ( () => {
+            let elements = document.querySelectorAll( '*' );
+            elements.forEach( ( element ) => {
+                element.style.outline = ( element.style.outline == '' ) ? '1px dashed red' : '';
+                element.style.outlineOffset = ( element.style.outlineOffset == '' ) ? '-1px' : '';
+            } );
+        } );
+    };
+</script>
 </body>
 </html>
