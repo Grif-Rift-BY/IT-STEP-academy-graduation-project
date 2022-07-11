@@ -595,7 +595,7 @@ html {
 }
 
 @media (max-width: 768px) {
-  .songs__item-text {
+  .songs__item-te {
     width: 70vmin;
   }
 }
@@ -665,7 +665,7 @@ iframe {
 .about {
   padding: 1px;
   height: 1000px;
-  background: fixed top/cover url("../assets/img/bg.webp");
+  background: fixed top/cover url("../assets/img/about/bg.webp");
 }
 
 /*
